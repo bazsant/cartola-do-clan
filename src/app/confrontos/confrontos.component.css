@@ -1,0 +1,17 @@
+.confrontos-card {
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+}
+
+.confronto {
+    border-bottom: 1px solid lightgray;
+    padding: 2px;
+}
+
+.confronto:last-child {
+    border: none;
+}
+
+.folga strong {
+    color: red;
+}

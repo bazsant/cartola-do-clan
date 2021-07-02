@@ -1,0 +1,29 @@
+<mat-card class="confrontos-card" *ngFor="let confronto of confrontos;">
+    <mat-card-header>
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <mat-card-title>Rodada <strong>{{confronto.rodada}}</strong></mat-card-title>
+                </div>
+            </div>
+        </div>
+    </mat-card-header>
+    <mat-card-content>
+        <div class="container">
+            <div *ngFor="let jogador of confronto.jogadores" class="row confronto">
+                <div class="col d-flex justify-content-center">{{jogador.jogador1}}</div>
+                <div class="col d-flex justify-content-center">X</div>
+                <div class="col d-flex justify-content-center">{{jogador.jogador2}}</div>                
+            </div>
+        </div>
+    </mat-card-content>
+    <mat-card-footer>
+        <div class="container">
+            <div class="row">
+                <div class="folga col d-flex justify-content-center">
+                    <span>Jogador de folga: <strong>{{confronto.folga}}</strong></span>
+                </div>
+            </div>
+        </div>
+    </mat-card-footer>
+</mat-card>

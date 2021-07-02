@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "cartola-do-clan"
+  "defaultProject": "cartola-do-clan",
+  "cli": {
+    "analytics": false
+  }
 }

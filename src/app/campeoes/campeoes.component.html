@@ -1,0 +1,14 @@
+<mat-card class="campeoes-card">
+    <mat-card-header>
+        <h2>Campeões</h2>
+    </mat-card-header>
+    <mat-card-content>
+        <div class="container">
+            <div class="row" *ngFor="let campeonato of campeoes;">
+                <div class="col">
+                    {{campeonato.ano}} - <img src="./../../assets/imgs/trophy.svg" width="15" height="15" class="d-inline-block align-top" alt=""> {{campeonato.primeiro}} <img src="./../../assets/imgs/silver-medal.svg" width="15" height="15" class="d-inline-block align-top" alt=""> {{campeonato.segundo}}
+                </div>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>
